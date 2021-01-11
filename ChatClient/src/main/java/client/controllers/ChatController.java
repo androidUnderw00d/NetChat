@@ -48,9 +48,8 @@ public class ChatController {
         appendMessage("Я: " + message);
         textField.clear();
 
-        File file = new File("src/main/resources/history.txt");
-
-        try (FileWriter writer = new FileWriter(file, true)) {
+        File file = new File("ChatClient/src/main/resources/history.txt");
+        try (FileWriter writer = new FileWriter(file, true)){
             writer.write(message + System.lineSeparator());
         } catch (IOException e) {
             e.printStackTrace();

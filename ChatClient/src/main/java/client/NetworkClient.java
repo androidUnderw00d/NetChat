@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 import client.models.Network;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -104,23 +105,23 @@ public class NetworkClient extends Application {
         network.waitMessage(chatController);
 
         try {
-            File file = new File("src/main/resources/history.txt");
+            File file = new File("ChatClient/src/main/resources/history.txt");
             FileReader reader = new FileReader(file);
-            List<String> lines = Files.lines(Paths.get("src/main/resources/history.txt")).collect(Collectors.toList());
+            List<String> lines = Files.lines(Paths.get("ChatClient/src/main/resources/history.txt")).collect(Collectors.toList());
             int count = lines.size();
             int lastHundredLines = (count - 100);
             for (int i = lastHundredLines; i < count; i++) {
                 chatController.appendMessage(lines.get(i));
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
-    private static class Launcher{
+/*    private static class Launcher{
         public static void main(String[] args) {
             NetworkClient.main(args);
         }
-    }
+    }*/
 }
