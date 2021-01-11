@@ -102,7 +102,6 @@ public class Network {
 
     public String sendAuthCommand(String login, String password) {
         try {
-
             sendMessage(String.format("%s %s %s", AUTH_CMD_PREFIX, login, password));
 
             String response = in.readUTF();

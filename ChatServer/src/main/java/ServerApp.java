@@ -7,6 +7,7 @@ public class ServerApp {
     private static final int DEFAULT_PORT = 8089;
 
     public static void main(String[] args) {
+
         int port = DEFAULT_PORT;
 
         if (args.length != 0) {

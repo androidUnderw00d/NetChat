@@ -91,7 +91,6 @@ public class NetworkClient extends Application {
         alert.showAndWait();
     }
 
-
     public Stage getPrimaryStage() {
         return primaryStage;
     }

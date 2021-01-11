@@ -57,7 +57,6 @@ public class ChatController {
 
         try {
             network.sendMessage(message);
-
         } catch (IOException e) {
             e.printStackTrace();
             NetworkClient.showErrorMessage("Ошибка подключения", "Ошибка при отправке сообщения", e.getMessage());

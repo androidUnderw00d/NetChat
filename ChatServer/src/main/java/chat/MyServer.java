@@ -25,7 +25,6 @@ public class MyServer {
         this.authService = new BaseAuthService();
     }
 
-
     public void start() throws IOException {
 
 //        LOGGER.debug("Debug");
