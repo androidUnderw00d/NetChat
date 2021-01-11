@@ -35,4 +35,5 @@ public class BaseAuthService implements AuthService {
         System.out.println("Сервис аутентификации завершен");
 
     }
+
 }

@@ -36,7 +36,6 @@ public class AuthController {
         } else {
             networkCliet.openMainChatWindow();
         }
-
     }
 
     public void setNetwork(Network network) {

@@ -81,7 +81,6 @@ public class ClientHandler {
                 out.writeUTF(String.format("%s %s", AUTHERR_CMD_PREFIX, "Ошибка авторизации"));
             }
         }
-
     }
 
     private void readMessage() throws IOException {
